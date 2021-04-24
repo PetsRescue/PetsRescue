@@ -1,0 +1,202 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="icon" href="https://petsgo.com.mx/wp-content/uploads/2020/12/Artboard-1.png">
+<title>PestRescue</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="https://petsgo.com.mx/wp-content/uploads/2020/12/Artboard-1.png" width="100"/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="current"><a href="shop.html">Mascotas</a></li>
+						    	<li><a href="team.html">Conocenos</a></li>
+						    	<li><a href="experiance.html">Experiencia</a></li>
+								<li><a href="contact.html">Contacto</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="https://image.flaticon.com/icons/png/128/35/35127.png?ga=GA1.2.1746131912.1617321600" width="40"/></li>
+						  <li class="list_desc"><h4><a href="#">Registrate Ahora</a></h4><span class="actual"></span></li>
+						  <div class="login_buttons">
+							 <div class="login_button"><a href="login.html">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/pic9.jpg" />
+									<img class="etalage_source_image" src="images/pic9.jpg" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59ad1ed15bafe8f8baace87f/gato-naranja-sentado_0.jpg" />
+								<img class="etalage_source_image" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59ad1ed15bafe8f8baace87f/gato-naranja-sentado_0.jpg" />
+							</li>
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="https://mh-1-banco-de-imagen.panthermedia.net/media/previews/0010000000/10593000/10593145_high.jpg" />
+									<img class="etalage_source_image" src="https://mh-1-banco-de-imagen.panthermedia.net/media/previews/0010000000/10593000/10593145_high.jpg" />
+								</a>
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>Gato y conejo</h3>
+				        	<p class="m_10">Conoce a este gato y este conejo casi hermanos y muy juguetones</p>
+				        </div>
+				        <div class="clear"> </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="box-info-product">
+					<p class="price2">¿Deseas adoptar?</p>
+					       <ul class="prosuct-qty">
+								<select>
+									<option>1</option>
+								</select>
+							</ul>
+							<button type="submit" name="Submit" class="exclusive">
+							   <span>¡Adoptar ya!</span>
+							</button>
+				   </div>
+			   </div>
+			</div>		
+			<div class="desc">
+			   	<h4>Descripcion</h4>
+			   	<p>Bigotes un gato junto aun conejo llamado oscar fueron encontrados juntos en un pequeño bosque oscar y bigotes tienen exactamente la misma edad practicamente hermanos a ambos les gusta comer y correr juntos, son juguetones y muy amistosos</p>
+			</div>
+			</div>	
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   				</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>	
+</html>
